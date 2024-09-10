@@ -1,0 +1,45 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.apiLinks,
+.authLinks {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.apiButton,
+.authButton {
+  min-width: 20rem;
+}
+
+.smooth {
+  opacity: 0;
+  animation: visible 1s linear 0.8s forwards;
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .apiLinks,
+  .authLinks {
+    flex-direction: column;
+  }
+
+  .apiButton,
+  .authButton {
+    min-width: 30vw;
+    height: 5rem;
+  }
+}

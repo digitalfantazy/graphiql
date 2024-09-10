@@ -1,0 +1,32 @@
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.8rem 1.5rem;
+  font-size: inherit;
+  border: unset;
+  background-color: var(--color-brand);
+  color: var(--color-text-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-grey-small);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.select option {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .select:hover {
+    background-color: var(--color-bg-btn-hover);
+    color: var(--color-text-white);
+    box-shadow: var(--shadow-brand-small);
+  }
+
+  .select:active {
+    background-color: var(--color-bg-btn-active);
+  }
+}

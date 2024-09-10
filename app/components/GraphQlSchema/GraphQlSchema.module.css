@@ -1,0 +1,17 @@
+.schemaSection {
+  margin-top: 2.4rem;
+  text-align: center;
+  overflow: auto;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.textarea {
+  font-size: 2rem;
+  border: 5px double var(--color-bg-dark);
+}

@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form input {
+  font-size: inherit;
+  color: var(--color-text-dark);
+  box-shadow: 0 0 4px var(--color-text-dark);
+}
+
+.form input::placeholder {
+  font-size: 0.8em;
+  color: var(--color-text-grey);
+}
+
+.form input:focus {
+  box-shadow: 0 0 4px var(--color-brand);
+}
+
+.submitWrapper,
+.sdlInputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .submitWrapper {
+    flex-direction: column;
+  }
+}

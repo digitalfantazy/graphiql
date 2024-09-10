@@ -1,0 +1,6 @@
+.errorMsg {
+  margin: 10px 0;
+  max-width: 400px;
+  font-size: 2rem;
+  color: var(--color-text-error);
+}

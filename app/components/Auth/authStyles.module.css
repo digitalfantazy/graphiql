@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10% auto;
+  padding: 3rem;
+  max-width: 700px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 3px var(--color-brand);
+  position: relative;
+  padding-top: 6rem;
+}
+
+.title {
+  margin-bottom: 4.6rem;
+  font-size: 3rem;
+  position: absolute;
+  top: -1.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-bg-light);
+  padding: 0 2rem;
+  color: var(--color-brand);
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: underline;
+  color: var(--color-brand);
+}
+
+.errorMsg {
+  padding: 10px 0;
+  color: var(--color-text-error);
+}
+
+.submitButton {
+  margin: 20px auto 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    color: var(--color-text-success);
+  }
+}

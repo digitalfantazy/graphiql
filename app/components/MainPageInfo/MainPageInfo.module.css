@@ -1,0 +1,83 @@
+.contentContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--color-text-dark);
+  border-radius: var(--border-radius);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.sectionBox {
+  position: relative;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding: 2rem 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 3px var(--color-brand);
+}
+
+.sectionTitle {
+  position: absolute;
+  top: -1.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-bg-light);
+  padding: 0 2rem;
+  color: var(--color-brand);
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.paragraph {
+  margin-bottom: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.teamList {
+  list-style-type: none;
+}
+
+.teamList li {
+  margin-bottom: 0.5rem;
+}
+
+.infoLink {
+  position: relative;
+  transition: color var(--transition);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .infoLink:hover {
+    color: var(--color-brand);
+  }
+
+  .infoLink::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-brand);
+    transition: var(--transition);
+  }
+
+  .infoLink:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .paragraph {
+    margin-top: 3rem;
+  }
+
+  .teamList {
+    margin-top: 2rem;
+  }
+}

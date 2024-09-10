@@ -1,0 +1,71 @@
+.emptyContent {
+  margin-top: 50px;
+  padding: 10% 0;
+  text-align: center;
+}
+
+.emptyContent p {
+  line-height: 3.6rem;
+}
+
+.pageLinksWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 40px auto 0;
+}
+
+.pageLink {
+  min-width: 20rem;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  list-style: none;
+}
+
+.historyElement {
+  max-width: 80%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--color-brand);
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+}
+
+.historyLink {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem 2rem;
+}
+
+.method {
+  flex-basis: 14rem;
+  flex-shrink: 0;
+  border-right: 2px solid var(--color-text-grey);
+}
+
+.url {
+  word-break: break-word;
+}
+
+.loading {
+  margin-top: 30rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .historyElement:hover {
+    color: var(--color-text-white);
+    background-color: var(--color-bg-btn-hover);
+  }
+}

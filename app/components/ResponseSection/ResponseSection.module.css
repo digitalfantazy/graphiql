@@ -1,0 +1,51 @@
+.responseSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 2.4rem;
+  padding: 20px 0;
+  border-top: 2px solid var(--color-bg-dark);
+  text-align: center;
+}
+
+.responseSection:has(.errorTitle) {
+  gap: 0;
+}
+
+.title {
+  font-size: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.text {
+  padding: 50px 0;
+}
+
+.errorTitle,
+.errorMessage {
+  font-size: inherit;
+  color: var(--color-text-error);
+}
+
+.errorImg {
+  filter: contrast(0.5);
+}
+
+.textarea {
+  margin: 0 auto;
+  padding: 6px;
+  font-size: inherit;
+  border: 5px double var(--color-bg-dark);
+  resize: vertical;
+}
+
+.goodReq {
+  color: var(--color-text-success);
+}
+
+.badReq {
+  color: var(--color-text-error);
+}

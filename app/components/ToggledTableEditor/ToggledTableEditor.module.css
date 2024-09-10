@@ -1,0 +1,19 @@
+.variablesWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.variablesWrapper.visible {
+  max-height: 580px;
+  overflow: auto;
+}
+
+.warningMsg {
+  padding: 10px 0;
+  text-align: left;
+}
+
+.accentMsg {
+  font-weight: bold;
+}

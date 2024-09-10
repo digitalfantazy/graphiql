@@ -1,0 +1,32 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(crimson, transparent);
+}
+
+.errorMsg {
+  padding: 40px 20px;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0 0 3px black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px white;
+}
+
+.errorTitle {
+  margin-bottom: 50px;
+  font-size: 4rem;
+  color: white;
+}
+
+.closeBtn {
+  margin: 20px auto 0;
+  background-color: darkgray;
+}

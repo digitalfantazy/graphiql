@@ -1,0 +1,48 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-size: 2.4rem;
+  background-color: var(--color-bg-dark);
+  box-shadow: var(--shadow-header);
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 6rem;
+}
+
+.sticky {
+  background-color: var(--color-bg-header-sticky);
+  box-shadow: var(--shadow-header-sticky);
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.logoImg {
+  height: 4.6rem;
+  width: 4.6rem;
+  padding: 0.6rem;
+  margin-top: 0.6rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-brand);
+  background-color: var(--color-bg-logo);
+  box-shadow: var(--shadow-grey-small);
+  transition: var(--transition);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navLogo:hover {
+    background-color: transparent;
+  }
+
+  .logoImg:hover {
+    box-shadow: var(--shadow-brand-small);
+  }
+}

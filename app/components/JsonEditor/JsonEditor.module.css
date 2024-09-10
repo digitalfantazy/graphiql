@@ -1,0 +1,41 @@
+.jsonEditor {
+  padding: 0 2rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 3px var(--color-brand);
+}
+
+.title {
+  display: inline-block;
+  padding: 0 4rem;
+  font-size: inherit;
+  transform: translateY(-50%);
+  background-color: var(--color-bg-light);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.errorMsg {
+  margin: 10px 0;
+  max-width: 400px;
+  font-size: 2rem;
+  color: var(--color-text-error);
+}
+
+.controlWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (max-width: 570px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
